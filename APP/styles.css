@@ -97,13 +97,17 @@ a:focus-visible, button:focus-visible {
 
 .nav-container {
   height: 100%;
-  max-width: 1100px;
+  max-width: 1240px;
   margin-inline: auto;
   padding-inline: clamp(1.25rem, 5vw, 3rem);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
+}
+
+.nav-menu {
+  margin-left: auto;
 }
 
 .nav-logo {
