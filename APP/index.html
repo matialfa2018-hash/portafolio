@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matías Alfaro — Cloud Developer &amp; Backend Engineer &amp; Project Manager</title>
+  <meta
+    name="description"
+    content="Portafolio de Matías Alfaro Méndez — Cloud Developer, Cloud Engineer y Backend Developer. Azure, Terraform, Python, automatización y backend con foco en operación real."
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Matías Alfaro — Cloud Developer & Project Manager" />
+  <meta property="og:description" content="Portafolio personal — Azure, Terraform, Python, Java, DevOps y más." />
+  <meta property="og:url" content="https://github.com/matialfa2018-hash" />
+  <meta property="og:image" content="./assets/og-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-header" role="banner">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-logo" aria-label="Inicio">
+        <span class="logo-bracket">{</span> ma.sys <span class="logo-bracket">}</span>
+      </a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list"></ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section id="inicio" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--primary" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--secondary" aria-hidden="true"></div>
+
+      <div class="hero-content container">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <div class="hero-eyebrow">
+              <span class="avail-dot" aria-hidden="true"></span>
+              Disponible para nuevos proyectos
+            </div>
+
+            <h1 id="hero-heading" class="hero-name">
+              Matías<br>Alfaro<span class="name-dot">.</span>
+            </h1>
+
+            <p class="hero-role">
+              <span class="typed-text" id="typed-text" aria-label="Cloud Developer | Automation Engineer | Backend Engineer"></span><span class="typed-cursor" aria-hidden="true">_</span>
+            </p>
+
+            <p class="hero-intro">
+              Diseño cloud, backend y automatizaciones para operación real, con foco en
+              sistemas sólidos, escalables y simples de mantener.
+            </p>
+
+            <div class="quick-stack" aria-label="Stack principal">
+              <span class="stack-pill" title="Microsoft Azure">
+                <svg width="15" height="15" viewBox="0 0 96 96" aria-hidden="true"><defs><linearGradient id="az1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0078d4"/><stop offset="100%" stop-color="#50e6ff"/></linearGradient></defs><path fill="url(#az1)" d="M33.2 6L18 51.4l22.8 5.7L60 18.3 33.2 6zm-2 54.3L14 89.9l68-1.3-26.2-27.3-24.6 5z"/></svg>
+                Azure
+              </span>
+              <span class="stack-pill" title="Terraform">
+                <svg width="15" height="15" viewBox="0 0 128 128" aria-hidden="true"><path fill="#7B42BC" d="M77.2 15.4v35.5l30.8-17.7V-2.3L77.2 15.4zM46.1 33l30.8 17.8V15.4L46.1-2.3V33zm0 35.6l30.8 17.8V50.9L46.1 33v35.6zm-31.3-18V86l30.8 17.8V68.2L14.8 50.6z"/></svg>
+                Terraform
+              </span>
+              <span class="stack-pill" title="Python">
+                <svg width="15" height="15" viewBox="0 0 128 128" aria-hidden="true"><path fill="#3776AB" d="M49.3 4C34.2 4 35.3 10.4 35.3 10.4l0 6.9h14.5v2.1H23.5s-9.7-1.1-9.7 14.1 8.5 14.6 8.5 14.6h5v-7s-.3-8.5 8.4-8.5h14.4s8.1.1 8.1-7.9V12.5S59.7 4 49.3 4zM41 9.6a2.6 2.6 0 1 1 0 5.2 2.6 2.6 0 0 1 0-5.2z"/><path fill="#FFD43B" d="M78.7 4.5c15.1 0 14 6.4 14 6.4l0 6.9H78.2v2.1h26.3s9.7-1.1 9.7 14.1-8.5 14.6-8.5 14.6h-5v-7s.3-8.5-8.4-8.5H78.1s-8.1.1-8.1-7.9V13s-.5-8.5 8.7-8.5zm8.3 5.6a2.6 2.6 0 1 1 0 5.2 2.6 2.6 0 0 1 0-5.2z"/></svg>
+                Python
+              </span>
+              <span class="stack-pill" title="MySQL / PostgreSQL">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4db33d" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                SQL
+              </span>
+              <span class="stack-pill" title="Git / GitHub">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                Git
+              </span>
+            </div>
+
+            <div class="hero-cta">
+              <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+              <a href="./assets/CV_Matias_Alfaro.pdf" class="btn btn-outline" download aria-label="Descargar CV">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Descargar CV
+              </a>
+              <a href="#contacto" class="btn btn-ghost">Hablemos</a>
+            </div>
+
+            <div class="hero-meta-grid" aria-label="Indicadores destacados">
+              <article class="hero-metric">
+                <span class="hero-metric-label">Proyectos liderados</span>
+                <strong class="hero-metric-value" data-counter-target="162">162</strong>
+              </article>
+              <article class="hero-metric">
+                <span class="hero-metric-label">Cierre exitoso</span>
+                <strong class="hero-metric-value" data-counter-target="77" data-counter-suffix="%">77%</strong>
+              </article>
+              <article class="hero-metric">
+                <span class="hero-metric-label">Certificaciones</span>
+                <strong class="hero-metric-value" data-counter-target="8">8</strong>
+              </article>
+              <article class="hero-metric">
+                <span class="hero-metric-label">Años técnicos</span>
+                <strong class="hero-metric-value" data-counter-target="3" data-counter-suffix="+">3+</strong>
+              </article>
+            </div>
+
+            <p class="hero-loc" aria-label="Ubicación: Santiago, Chile">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Santiago, Chile
+            </p>
+          </div>
+
+          <aside class="hero-panel" aria-label="Panel operativo">
+            <div class="panel-shell">
+              <div class="panel-head">
+                <div>
+                  <span class="panel-kicker">system / overview</span>
+                  <h2 class="panel-title">Arquitectura, delivery y automatización con foco operativo.</h2>
+                </div>
+                <span class="panel-status">
+                  <span class="avail-dot" aria-hidden="true"></span>
+                  online
+                </span>
+              </div>
+
+              <div class="hero-terminal" aria-hidden="true">
+                <div class="terminal-line"><span class="terminal-prompt">$</span><span>terraform plan --target=network</span></div>
+                <div class="terminal-line terminal-output">policy checks: passed</div>
+                <div class="terminal-line"><span class="terminal-prompt">$</span><span>python sync_projects.py</span></div>
+                <div class="terminal-line terminal-output">salesforce data normalized</div>
+                <div class="terminal-line"><span class="terminal-prompt">$</span><span>delivery status</span></div>
+                <div class="terminal-line terminal-output">production ready</div>
+              </div>
+
+              <div class="focus-grid">
+                <article class="focus-card">
+                  <span class="focus-index">01</span>
+                  <h3>Infraestructura reproducible</h3>
+                  <p>Azure, redes y Terraform con foco en entornos que se pueden mantener.</p>
+                </article>
+                <article class="focus-card">
+                  <span class="focus-index">02</span>
+                  <h3>Backend útil</h3>
+                  <p>Automatizaciones, parsing, datos y APIs pensadas para operación real.</p>
+                </article>
+                <article class="focus-card focus-card--wide">
+                  <span class="focus-index">03</span>
+                  <h3>Delivery técnico</h3>
+                  <p>Coordino equipos, procesos y ejecución sin perder profundidad técnica.</p>
+                </article>
+              </div>
+
+              <div class="signal-orbit" aria-hidden="true">
+                <span class="orbit-ring orbit-ring--one"></span>
+                <span class="orbit-ring orbit-ring--two"></span>
+                <span class="orbit-ring orbit-ring--three"></span>
+                <span class="orbit-node orbit-node--azure">Azure</span>
+                <span class="orbit-node orbit-node--tf">Terraform</span>
+                <span class="orbit-node orbit-node--py">Python</span>
+                <span class="orbit-node orbit-node--sql">SQL</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-track"></div>
+      </div>
+    </section>
+
+    <!-- ══════════ SOBRE MÍ ══════════ -->
+    <section id="sobre-mi" class="section" aria-labelledby="sobre-mi-heading">
+      <div class="container">
+        <div class="section-label-row">
+          <span class="s-label">01 — sobre mí</span>
+          <p class="section-intro">
+            Perfil híbrido entre cloud engineering, backend y liderazgo técnico.
+          </p>
+        </div>
+        <div class="about-layout">
+          <div class="about-left">
+            <h2 id="sobre-mi-heading" class="section-title">Perfil técnico con mirada de sistema.</h2>
+            <div class="about-body">
+              <p>
+                Soy Ingeniero en Conectividad y Redes y fui evolucionando hacia un perfil
+                híbrido entre desarrollo, cloud y coordinación técnica.
+              </p>
+              <p>
+                Hoy trabajo en <strong>Practia Global</strong> como Cloud &amp; Automation Engineer,
+                combinando liderazgo técnico con automatización real en producción.
+              </p>
+              <p>
+                Trabajo con Azure, Terraform, DigitalOcean y backend para diseñar soluciones
+                que sigan funcionando cuando aumenta la complejidad.
+              </p>
+            </div>
+            <div class="about-contact-row">
+              <a href="mailto:matialfa2018@gmail.com" class="contact-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                matialfa2018@gmail.com
+              </a>
+              <a href="tel:+56951605449" class="contact-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +56 9 5160 5449
+              </a>
+              <a href="https://github.com/matialfa2018-hash" target="_blank" rel="noopener noreferrer" class="contact-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <div class="about-panel">
+              <div class="about-panel-head">
+                <span class="panel-kicker">operating mode</span>
+                <h3 class="about-panel-title">Cómo trabajo</h3>
+              </div>
+              <div class="stats-stack" aria-label="Áreas principales">
+                <div class="stat-block">
+                  <span class="stat-n stat-n--text">Cloud</span>
+                  <span class="stat-desc">Azure, redes, DNS, VMs y operación productiva.</span>
+                </div>
+                <div class="stat-block">
+                  <span class="stat-n stat-n--text">Automation</span>
+                  <span class="stat-desc">Flujos Python que reducen trabajo manual y errores.</span>
+                </div>
+                <div class="stat-block">
+                  <span class="stat-n stat-n--text">Backend</span>
+                  <span class="stat-desc">Integraciones, datos, lógica de negocio y APIs.</span>
+                </div>
+                <div class="stat-block">
+                  <span class="stat-n stat-n--text">Delivery</span>
+                  <span class="stat-desc">Coordinación técnica con foco en ejecución y trazabilidad.</span>
+                </div>
+              </div>
+              <div class="principles-grid">
+                <article class="principle-card">
+                  <h3>Pienso de punta a punta</h3>
+                  <p>No separo infraestructura, datos y operación: diseño el sistema completo.</p>
+                </article>
+                <article class="principle-card">
+                  <h3>Automatizo lo repetible</h3>
+                  <p>Donde hay fricción manual, busco estandarizar, medir y reducir tiempos.</p>
+                </article>
+                <article class="principle-card">
+                  <h3>Diseño para mantener</h3>
+                  <p>El objetivo no es solo desplegar, sino dejar soluciones que otros puedan operar.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SKILLS ══════════ -->
+    <section id="skills" class="section section-tinted" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-label-row">
+          <span class="s-label">02 — habilidades</span>
+          <h2 id="skills-heading" class="section-title-inline">Skills</h2>
+          <p class="section-intro">
+            Infraestructura, backend y automatización como una sola capa de entrega.
+          </p>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-cat">
+            <div class="skill-cat-top">
+              <span class="cat-icon" aria-hidden="true">cld</span>
+              <h3 class="cat-name">Cloud &amp; DevOps</h3>
+            </div>
+            <ul class="skill-items" role="list">
+              <li><span class="dot azure"></span>Azure — VNets, NSG, RBAC</li>
+              <li><span class="dot azure"></span>Azure DNS &amp; VMs</li>
+              <li><span class="dot tf"></span>Terraform (IaC)</li>
+              <li><span class="dot do"></span>DigitalOcean</li>
+              <li><span class="dot linux"></span>Linux (administración)</li>
+              <li><span class="dot git"></span>Git / GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat-top">
+              <span class="cat-icon" aria-hidden="true">dev</span>
+              <h3 class="cat-name">Backend / Dev</h3>
+            </div>
+            <ul class="skill-items" role="list">
+              <li><span class="dot python"></span>Python</li>
+              <li><span class="dot java"></span>Java</li>
+              <li><span class="dot js"></span>JavaScript</li>
+              <li><span class="dot php"></span>PHP</li>
+              <li><span class="dot api"></span>APIs REST</li>
+            </ul>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat-top">
+              <span class="cat-icon" aria-hidden="true">db</span>
+              <h3 class="cat-name">Bases de datos</h3>
+            </div>
+            <ul class="skill-items" role="list">
+              <li><span class="dot mysql"></span>MySQL</li>
+              <li><span class="dot sqlsrv"></span>SQL Server</li>
+              <li><span class="dot pg"></span>PostgreSQL</li>
+              <li><span class="dot db"></span>Modelado relacional</li>
+            </ul>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat-top">
+              <span class="cat-icon" aria-hidden="true">ops</span>
+              <h3 class="cat-name">Herramientas</h3>
+            </div>
+            <ul class="skill-items" role="list">
+              <li><span class="dot vsc"></span>VS Code</li>
+              <li><span class="dot pyc"></span>PyCharm</li>
+              <li><span class="dot pbi"></span>Power BI</li>
+              <li><span class="dot xl"></span>Excel Avanzado</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ EXPERIENCIA ══════════ -->
+    <section id="experiencia" class="section" aria-labelledby="exp-heading">
+      <div class="container">
+        <div class="section-label-row">
+          <span class="s-label">03 — trayectoria</span>
+          <h2 id="exp-heading" class="section-title-inline">Experiencia</h2>
+          <p class="section-intro">
+            Ejecución técnica, automatización y coordinación de proyectos.
+          </p>
+        </div>
+        <div class="timeline" role="list">
+
+          <article class="tl-item" role="listitem" aria-labelledby="exp1-title">
+            <div class="tl-left">
+              <span class="tl-date">Ene 2025 — hoy</span>
+              <div class="tl-line" aria-hidden="true"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <h3 id="exp1-title" class="tl-role">Project Manager Telecommunications<br><small>/ Project Lead Técnico</small></h3>
+                <span class="tl-company">Practia Global</span>
+              </div>
+              <ul class="tl-list">
+                <li>Liderazgo técnico de proyectos de telecomunicaciones en banca y minería para Telefónica / Movistar Empresas.</li>
+                <li>Diseño y validación de arquitecturas de red y servicios, junto con planificación de soluciones en entornos de redes, híbridos y cloud.</li>
+                <li>Automatización de reportes y procesos operativos mediante Python.</li>
+                <li>Coordinación técnica con equipos de ingeniería en implementaciones de conectividad y seguridad.</li>
+                <li>Aplicación de SCRUM, PMO y análisis de datos con Excel avanzado y Power BI para optimizar flujos operativos.</li>
+              </ul>
+              <div class="tl-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Telecom</span>
+                <span class="tag">Cloud</span>
+                <span class="tag">PMO</span>
+                <span class="tag">Scrum</span>
+                <span class="tag">Power BI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item" role="listitem" aria-labelledby="exp2-title">
+            <div class="tl-left">
+              <span class="tl-date">Ago 2025 — Nov 2025</span>
+              <div class="tl-line tl-line--short" aria-hidden="true"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <h3 id="exp2-title" class="tl-role">Especialista en Infraestructura TI</h3>
+                <span class="tl-company">Rocktech SPA</span>
+              </div>
+              <ul class="tl-list">
+                <li>Administración de infraestructura TI y soporte N1/N2 en entornos corporativos.</li>
+                <li>Gestión y despliegue de bases de datos en la nube utilizando DigitalOcean.</li>
+                <li>Implementación y administración de entornos de desarrollo web en servidores cloud.</li>
+                <li>Configuración de servidores Linux, Windows y servicios web.</li>
+                <li>Troubleshooting de redes empresariales, seguridad TI, monitoreo, respaldo de datos y documentación técnica.</li>
+              </ul>
+              <div class="tl-tags">
+                <span class="tag">DigitalOcean</span>
+                <span class="tag">Linux</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">TCP/IP</span>
+                <span class="tag">Firewall</span>
+                <span class="tag">Infra TI</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ LOGROS ══════════ -->
+    <section id="logros" class="section section-tinted" aria-labelledby="logros-heading">
+      <div class="container">
+        <div class="section-label-row">
+          <span class="s-label">04 — impacto</span>
+          <h2 id="logros-heading" class="section-title-inline">Logros</h2>
+          <p class="section-intro">
+            Resultados en escalabilidad operativa, automatización y ejecución.
+          </p>
+        </div>
+        <div class="logros-grid">
+
+          <div class="logro-card" role="article">
+            <div class="logro-num">01</div>
+            <div class="logro-body">
+              <h3 class="logro-title">Gestión masiva de proyectos</h3>
+              <p>Gestión técnica de <strong>162 proyectos</strong> con tasa de finalización exitosa del <strong>77%</strong> y cancelación inferior al 12%.</p>
+            </div>
+          </div>
+
+          <div class="logro-card" role="article">
+            <div class="logro-num">02</div>
+            <div class="logro-body">
+              <h3 class="logro-title">Automatización operacional</h3>
+              <p>Procesos operativos automatizados con Python: <strong>reportes automáticos, trazabilidad de proyectos</strong> y sincronización de datos con Salesforce.</p>
+            </div>
+          </div>
+
+          <div class="logro-card" role="article">
+            <div class="logro-num">03</div>
+            <div class="logro-body">
+              <h3 class="logro-title">Infraestructura cloud productiva</h3>
+              <p>Despliegue y administración de <strong>bases de datos en DigitalOcean</strong> para entornos web de alta disponibilidad.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PROYECTOS ══════════ -->
+    <section id="proyectos" class="section" aria-labelledby="proyectos-heading">
+      <div class="container">
+        <div class="section-label-row">
+          <span class="s-label">05 — trabajo</span>
+          <h2 id="proyectos-heading" class="section-title-inline">Proyectos destacados</h2>
+          <p class="section-intro">
+            Casos seleccionados con foco en contexto técnico e impacto operativo.
+          </p>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ══════════ CERTIFICACIONES ══════════ -->
+    <section id="certificaciones" class="section section-tinted" aria-labelledby="certs-heading">
+      <div class="container">
+        <div class="section-label-row">
+          <span class="s-label">06 — acreditaciones</span>
+          <h2 id="certs-heading" class="section-title-inline">Certificaciones</h2>
+          <p class="section-intro">
+            Formación en cloud, automatización, datos, seguridad y gestión técnica.
+          </p>
+        </div>
+        <div class="certs-list" id="certs-list"></div>
+      </div>
+    </section>
+
+    <!-- ══════════ LABS ══════════ -->
+    <section id="labs" class="section" aria-labelledby="labs-heading">
+      <div class="container">
+        <div class="section-label-row">
+          <span class="s-label">07 — en construcción</span>
+          <h2 id="labs-heading" class="section-title-inline">Cloud &amp; DevOps Labs</h2>
+          <p class="section-intro">
+            Laboratorios para publicar repos, documentar arquitectura y mostrar proceso.
+          </p>
+        </div>
+        <p class="section-note">Proyectos experimentales en preparación. Pronto con repos públicos.</p>
+        <div class="labs-grid" id="labs-grid"></div>
+      </div>
+    </section>
+
+    <!-- ══════════ CONTACTO ══════════ -->
+    <section id="contacto" class="section section-tinted" aria-labelledby="contacto-heading">
+      <div class="container">
+        <div class="section-label-row">
+          <span class="s-label">08 — hablemos</span>
+          <h2 id="contacto-heading" class="section-title-inline">Contacto</h2>
+          <p class="section-intro">
+            Si estás armando un equipo o un proyecto técnico, conversemos.
+          </p>
+        </div>
+        <div class="contact-layout">
+
+          <div class="contact-left">
+            <p class="contact-intro">
+              Disponible para oportunidades laborales, proyectos freelance y colaboraciones
+              donde cloud, backend y automatización tengan impacto visible.
+            </p>
+            <div class="contact-presence" aria-label="Disponibilidad">
+              <article class="presence-card">
+                <span class="presence-label">Base</span>
+                <strong class="presence-value">Santiago</strong>
+              </article>
+              <article class="presence-card">
+                <span class="presence-label">Modalidad</span>
+                <strong class="presence-value">Remoto / híbrido</strong>
+              </article>
+              <article class="presence-card">
+                <span class="presence-label">Foco</span>
+                <strong class="presence-value">Cloud + Backend</strong>
+              </article>
+            </div>
+            <div class="contact-channels" id="contact-channels"></div>
+          </div>
+
+          <form class="contact-form" id="contact-form" method="POST" action="https://formspree.io/f/meepvyyr" novalidate aria-label="Formulario de contacto" data-recipient="matialfa2018@gmail.com">
+            <div class="form-top">
+              <p class="form-note">
+                El formulario ya está conectado a Formspree para enviar mensajes desde el sitio.
+              </p>
+            </div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden aria-hidden="true" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required autocomplete="name" aria-required="true" />
+                <span class="form-err" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required autocomplete="email" aria-required="true" />
+                <span class="form-err" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Asunto</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="¿En qué te puedo ayudar?" required aria-required="true" />
+              <span class="form-err" id="subject-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Cuéntame sobre tu proyecto..." required aria-required="true"></textarea>
+              <span class="form-err" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-send" aria-label="Enviar mensaje">
+              Enviar consulta
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-ok" id="form-success" role="status" aria-live="polite" hidden>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="form-ok-text">Mensaje enviado. Te respondo pronto.</span>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <a href="#inicio" class="nav-logo footer-logo" aria-label="Volver al inicio">
+        <span class="logo-bracket">{</span> ma.sys <span class="logo-bracket">}</span>
+      </a>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Matías Alfaro Méndez &mdash; Portafolio en HTML, CSS y JS
+      </p>
+      <nav class="footer-nav" id="footer-nav" aria-label="Footer nav"></nav>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba" hidden>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
