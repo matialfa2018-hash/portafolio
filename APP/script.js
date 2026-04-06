@@ -634,15 +634,15 @@ function initReveal() {
   });
 
   if (prefersReducedMotion) {
-    items.forEach(item => item.classList.add('is-visible'));
+    items.forEach(item => item.classList.add('visible'));
     return;
   }
 
   const observer = new IntersectionObserver(
-    entries => {
+      entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-visible');
+        entry.target.classList.add('visible');
         observer.unobserve(entry.target);
       });
     },
@@ -662,7 +662,7 @@ function initReveal() {
       entries => {
         entries.forEach(entry => {
           if (!entry.isIntersecting) return;
-          entry.target.classList.add('is-visible');
+          entry.target.classList.add('visible');
           lineObserver.unobserve(entry.target);
         });
       },
