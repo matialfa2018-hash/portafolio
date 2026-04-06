@@ -106,10 +106,6 @@ a:focus-visible, button:focus-visible {
   gap: 1rem;
 }
 
-.nav-menu {
-  margin-left: auto;
-}
-
 .nav-logo {
   font-family: var(--mono);
   font-size: 1.15rem;
@@ -125,6 +121,7 @@ a:focus-visible, button:focus-visible {
   display: flex;
   align-items: center;
   gap: 0.15rem;
+  position: relative;
 }
 .nav-link {
   font-size: 0.83rem;
